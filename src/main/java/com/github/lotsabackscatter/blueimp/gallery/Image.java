@@ -3,11 +3,12 @@ package com.github.lotsabackscatter.blueimp.gallery;
 import com.google.gson.Gson;
 
 import javax.annotation.Nonnull;
+import java.io.Serializable;
 
 /**
  * An image that is to be displayed in the Gallery
  */
-public class Image {
+public class Image implements Serializable {
 
     private static final Gson gson = new Gson();
     public final String title;
